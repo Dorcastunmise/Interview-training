@@ -48,7 +48,7 @@ render(){
           
 <div>
              
-<h1> Hello World from Edureka!!</h1>
+<p> Hello World </p>
  
          </div>
  
@@ -822,12 +822,6 @@ if (loading) {
 return <p>Loading...</p>;
 }
  
-
-1
-2
-3
-4
-5
 if (error) {
 return <p>Error: {error.message}</p>;
 }
@@ -854,7 +848,7 @@ During an interview, you can explain Hooks in the following way:
 
 “Hooks are a new feature in React that allows us to add state and other React features to functional components. They were introduced in React 16.8 and have since become a popular way to manage state and side effects in functional components. Hooks are named functions that start with the word use and allow us to reuse stateful logic across components without having to write a class component. For example, the useState Hook allows us to add state to a functional component and the useEffect Hook lets us perform side effects like data fetching or updating the document title. Hooks make our code more reusable, easier to understand, and easier to test.”
 
-React interview questions – localization in react
+ # localization in react
 
 74. How do you handle localization in a React application?
 Handling localization in a React application typically involves creating translated versions of your text content and displaying the appropriate version based on the user’s preferred language.
@@ -876,9 +870,6 @@ A dynamic component, on the other hand, is a component that can change its prope
 
 Here’s an example of a static component:
 
-1
-2
-3
 function welcome(props) {
 return <h1>Hello, {props.name}</h1>;
 }
@@ -1066,17 +1057,6 @@ Code splitting in React can be handled using the following approaches:
 
 Dynamic Imports: Dynamic imports allow you to load a component lazily only when it is needed. This is done using the import() syntax and provides a way to split code into smaller chunks that can be loaded on demand.
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
 import React, { Suspense } from 'react’;
 const LazyComponent = React.lazy(() => import('./LazyComponent'));
 function App() {
@@ -1088,20 +1068,7 @@ return (
 </div>
 );
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
+
 import React, { lazy, Suspense } from 'react’;
 import { Route } from 'react-router-dom’;
 const Home = lazy(() => import('./Home'));
@@ -1165,9 +1132,6 @@ In Redux, a middleware is a software component that sits between the store and t
 
 98. How do you handle internationalization in a React application?
 
-Course Curriculum
-React.js Training Course With Certification
-Weekday / Weekend Batches
 Handling internationalization (i18n) in a React application involves adapting the user interface and content of the application to meet the language and cultural requirements of different locales.
 
 There are several libraries and techniques that can be used to implement internationalization in a React application, including:
@@ -1177,26 +1141,7 @@ Context API: React’s Context API can be used to store the current locale and m
 Custom hooks: Custom hooks can be written to encapsulate the logic for formatting and retrieving messages, and to make it easier to use in components.
 Here’s an example of how the react-intl library can be used to implement internationalization in a React application:
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
+
 import React from 'react';
 import { FormattedMessage, useIntl } from ‘react-intl';
 function MyComponent() {
@@ -1243,18 +1188,7 @@ React provides a built-in hook called useMemo for implementing memoization. useM
 
 Here is an example of how useMemo can be used to memoize an expensive calculation:
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
+
 import React, { useMemo } from 'react’;
 function MyComponent({ data }) {
 const memoizedvalue = useMemo(() => {
@@ -1271,7 +1205,7 @@ In this example, useMemo is used to memoize the result of the expensive calculat
 
 Memoization can greatly improve the performance of a React application by avoiding unnecessary re-renders and re-calculations, especially when dealing with complex or large data structures.
 
-react interview questions – handling events
+# Handling events
 
 101. How do you handle events in React?
 
@@ -1279,24 +1213,7 @@ When building a React application, it’s common to need to respond to user acti
 
 For example, to handle a click event on a button, you would define a function in your React component that updates the component’s state, and then attach that function to the button as an onClick event handler.
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
+
 class MyComponent extends React.Component {
 constructor(props) {
 super(props);
