@@ -497,13 +497,7 @@ React Router is a powerful routing library built on top of React, which helps in
 Although a <div> is used to encapsulate multiple routes inside the Router. The ‘switch’ keyword is used when you want to display only a single route to be rendered amongst the several defined routes. The <switch> tag when in use matches the typed URL with the defined routes in sequential order. When the first match is found, it renders the specified route. Thereby bypassing the remaining routes.
 
 48. Why do we need a Router in React?
-A Router is used to define multiple routes and when a user types a specific URL, if this URL matches the path of any ‘route’ defined inside the router, then the user is redirected to that particular route. So basically, we need to add a Router library to our app that allows creating multiple routes with each leading to us a unique view.
-
-1
-2
-3
-4
-5
+A Router is used to define multiple routes and when a user types a specific URL, if this URL matches the path of any ‘route’ defined inside the router, then the user is redirected to that particular route. So basically, we need to add a Router library to our app that allows creating multiple routes with each leading to us a unique view 
 <switch>
     <route exact path=&rsquo;/&rsquo;&nbsp;component={Home}/>
     <route path=&rsquo;/posts/:id&rsquo; component={Newpost}/>
@@ -542,16 +536,7 @@ Handling forms in React can be done in a few different ways, but the most common
 
 Here is an example of how to handle a simple form with two input fields (username and password) in a controlled component:
 
-First, define the initial state of the form in the parent component’s constructor. For example:
-1
-2
-3
-4
-5
-6
-7
-8
-9
+First, define the initial state of the form in the parent component’s constructor. E.g
 </pre>
 constructor(props) {
 super(props);
@@ -562,15 +547,7 @@ this.state = {
 }
 <pre>
 Next, create callback functions for each input field that updates the corresponding state property when the input value changes. For example:
- 
 
-1
-2
-3
-4
-5
-6
-7
 </span>
 handleUsernameChange = (event) =
 this.setState({username: event.target.value});
@@ -580,12 +557,7 @@ this.setState({password: event.target.value});
 }
         3. Pass the state properties and callback functions as props to the controlled form component. For example:
 
-1
-2
-3
-4
-5
-6
+
 <Form
 username={this.state.username}
 password={this.state.password}
@@ -593,16 +565,6 @@ handleUsernameChange={this.handleUsernameChange}
 handlePasswordChange={this.handlePasswordChange}
 />
 In the controlled form component, use the passed-in props to set the value and onChange attributes of each input field. For example:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
 <input
 type="text"
 value={props.username}
@@ -639,17 +601,6 @@ For example, you could have a route for the homepage that maps to a “Home” c
 
 To use React Router in a React application, you’ll need to install it, import it into your application, and define your routes and the components they map to. Here’s an example of how you might set up React Router in a simple React application:
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from “./components/Home";
 import profile from “./components/Profile”;
@@ -663,7 +614,7 @@ return (
 }
 In this example, the Router component is used to wrap the entire application and the Route component is used to define the specific routes and the components they map to. The exact prop is used to ensure that only the exact path is matched and not any subpaths.
 
-React interview questions – Server-side and client-side rendering 
+Server-side and client-side rendering 
 
 56. Explain the difference between server-side rendering and client-side rendering in React.
 
@@ -679,9 +630,7 @@ Faster time-to-first-byte
 
 Better accessibility for users who have JavaScript disabled
 
-Course Curriculum
-React.js Training Course With Certification
-Instructor-led SessionsAssessmentsAssignmentsLifetime Access
+
 Client-side rendering (CSR) is when the React application is rendered entirely in the browser, using JavaScript. The browser requests the JavaScript bundle from the server and then renders the components on the client side. This approach has the benefit of faster load times for users on fast connections and a more responsive user interface.
 
 In general, CSR is the simpler option to implement and more popular, but SSR is a good choice for certain use cases, such as when SEO is a primary concern, or when the app is targeting users on slow internet connections.
@@ -825,7 +774,6 @@ One key difference between the two is that a class component can have local stat
 
 Functional components are considered simpler, easier to understand and test, and have better performance than class components. Class components are useful when you need to use lifecycle methods or the local state.
 
- 
 
 70. Explain the concept of a Context in React.
 
@@ -850,28 +798,7 @@ In either case, it’s important to keep an eye on the component’s state and u
 
 A simple example of loading data asynchronously in a React component using useEffect and fetch:
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
+
 import { useState, useEffect } from ‘react’;
 function MyComponent() {
 const [data, setData] = usestate(null);
